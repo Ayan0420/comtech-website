@@ -1,0 +1,46 @@
+#comtech-logo {
+}
+
+#facebook-link {
+  color: #4267B2;
+}
+
+@media (max-width: 992px) {
+  .bg-color-white-lg {
+    background-color: var(--bs-white) !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-black-lg {
+    color: var(--bs-white) !important;
+  }
+}
+
+.call-to-action-heading {
+  text-shadow: 6px 5px 7px rgba(0,0,0,0.75);
+}
+
+.text-shadow {
+  text-shadow: 3px 2px 3px rgba(0,0,0,0.75);
+}
+
+#services-section {
+  background: url("../../assets/img/gallery-4.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  #services-section {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#call-to-action-bg {
+}
+
