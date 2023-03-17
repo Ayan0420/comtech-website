@@ -41,6 +41,27 @@
   }
 }
 
-#call-to-action-bg {
+.sk-search-container, .sk-facebook-page-posts-profile-pic-container, .sk-profile-about-container, .sk-profile-description, .sk_facebook_posts_feed_username_follow, .sk-facebook-page-posts-profile-counts{
+  display: none !important;
 }
 
+.tutorial_link{
+  display: none !important;
+}
+
+.sk-facebook-page-posts-profile-info{
+  text-align: center;
+}
+.facebook-page-posts-user-container{
+  background-color: #d9534f !important;
+  border: none !important;
+  font-size: large !important;
+}
+
+.href_status_trigger_post, .sk-post-repost-count{
+  color: #d9534f !important;
+}
+
+.sk-fb-post-footer-icon > a  {
+  color: #d9534f !important;
+}
