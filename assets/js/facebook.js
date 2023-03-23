@@ -651,7 +651,8 @@
                     post_items += "<div class='grid-facebook-page-posts'>";
                     post_items += "<div class='grid-sizer-facebook-page-posts'></div>";
                     var enable_button = false;
-                    last_key = parseInt(getDsmSetting(sk_facebook_feed, 'post_count'));
+                    last_key = 6;
+                    
                     for (var i = 0; i < last_key; i++) {
                         if (typeof data_storage[i] != 'undefined') {
                             post_items += getFeedItem(data_storage[i], sk_facebook_feed);
@@ -1153,7 +1154,7 @@
         post_items += "</div>";
         return post_items;
     }
-
+    
     function getPaginationResult(sk_facebook_feed, user_solutions, page, column_count) {
         var start = 0;
         var end = parseInt(column_count);
@@ -2749,7 +2750,7 @@
                         var post_items = "";
                         var enable_button = false;
                         var old_last_key = last_key;
-                        last_key = old_last_key + parseInt(getDsmSetting(sk_facebook_feed, 'post_count'));
+                        last_key = old_last_key + 6;
                         for (var i = old_last_key; i < last_key; i++) {
                             if (typeof data_storage[i] != 'undefined') {
                                 post_items += getFeedItem(data_storage[i], sk_facebook_feed);
@@ -2763,7 +2764,7 @@
                         if (enable_button) {
                             current_btn.show();
                         }
-                        showSharedPosts(sk_facebook_feed, false);
+                        showSharedPosts(sk_facebook_feed, true);
                         current_btn.removeAttr('disabled');
                         applyReadmore(sk_facebook_feed, data_storage);
                         applyCustomUi(jQuery, sk_facebook_feed);
