@@ -1,3 +1,7 @@
+/**
+ * Modified lines: 660, 2761
+ */
+
 (function(window, document) {
     "use strict";
     var $grid;
@@ -651,6 +655,8 @@
                     post_items += "<div class='grid-facebook-page-posts'>";
                     post_items += "<div class='grid-sizer-facebook-page-posts'></div>";
                     var enable_button = false;
+                    
+                    //Number of pages
                     last_key = 6;
                     
                     for (var i = 0; i < last_key; i++) {
@@ -2750,7 +2756,10 @@
                         var post_items = "";
                         var enable_button = false;
                         var old_last_key = last_key;
+
+                        //Number of pages that will load after triggering "Load more posts" button
                         last_key = old_last_key + 6;
+
                         for (var i = old_last_key; i < last_key; i++) {
                             if (typeof data_storage[i] != 'undefined') {
                                 post_items += getFeedItem(data_storage[i], sk_facebook_feed);
