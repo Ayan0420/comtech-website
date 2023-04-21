@@ -385,7 +385,7 @@
                                 <!-- Start: Error Example -->
                                 <div class="mb-3"><label class="form-label" for="contact">Phone No/Email</label><input class="form-control" required="true" autocomplete="off" type="text" id="contact" name="contact"></div><!-- End: Error Example -->
                                 <div class="mb-3"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message" required="true" autocomplete="off" name="message" rows="6"></textarea></div>
-                                <div class="mb-3"><button class="btn btn-danger shadow-sm" type="submit">Send</button></div>
+                                <div class="mb-3"><button class="btn btn-danger shadow-sm" type="submit" data-bs-toggle="modal" data-bs-target="#sending">Send</button></div>
                             </form>
                         </div>
                     </div>
@@ -393,6 +393,22 @@
             </div>
         </section><!-- End: Contact Map Two Columns -->
     </section><!-- End: contact-form -->
+
+
+    <!-- Start: Modal -->
+    <div class="modal fade" id="sending" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sendingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://media.tenor.com/q-zZSTX6jSIAAAAC/mail-download.gif" class="img-fluid" width="200" alt="">
+                <h4>Sending...</h4>
+                <p>Please wait for a little moment.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End: Modal -->
+
     <section id="careers">
         <div class="text-light d-flex flex-column justify-content-center align-items-center p-" style="height: 500px;background: url(&quot;assets/img/gallery-3-blue.jpg&quot;) top / cover;">
             <!-- Start: free-checkup -->
