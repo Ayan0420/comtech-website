@@ -1,5 +1,3 @@
-#comtech-logo {
-}
 
 #facebook-link {
   color: #4267B2;
@@ -41,7 +39,7 @@
   }
 }
 
-.sk-search-container, .sk-facebook-page-posts-profile-pic-container, .sk-profile-about-container, .sk-profile-description, .sk_facebook_posts_feed_username_follow, .sk-facebook-page-posts-profile-counts{
+/* .sk-search-container, .sk-facebook-page-posts-profile-pic-container, .sk-profile-about-container, .sk-profile-description, .sk_facebook_posts_feed_username_follow, .sk-facebook-page-posts-profile-counts{
   display: none !important;
 }
 
@@ -69,7 +67,7 @@
 .sk-facebook-page-posts-load-more-posts{
   background-color: #d9534f !important;
   margin-top: 3rem !important;
-}
+} */
 
 .grid-content{
   background-color: #fffeeb !important;
